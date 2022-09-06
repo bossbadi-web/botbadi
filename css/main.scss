@@ -1,5 +1,17 @@
+
 body {
-  background: #f1f1f1;
+  background: url('../images/background.webp') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  
+  color: white;
+}
+
+nav {
+  background-color: #14343d;
+  color: white;
 }
 
 h1 {
@@ -7,12 +19,10 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  margin-top: 1em;
-  margin-bottom: 1em;
+  padding: 1em;
 }
 
-nav {
-  background-color: #14343d;
-  color: white;
+.container {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1em;
 }
