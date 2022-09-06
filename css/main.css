@@ -1,13 +1,16 @@
-body {
-  background: url("../images/background.webp") no-repeat center center fixed;
-  background-size: cover;
-  -o-background-size: cover;
-  color: white;
+@import url(https://fonts.googleapis.com/css?family=Exo:500);
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
 }
 
-nav {
-  background-color: #14343d;
-  color: white;
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Exo", arial;
 }
 
 h1 {
@@ -16,9 +19,46 @@ h1 {
   justify-content: center;
   align-items: center;
   padding: 1em;
+  color: black;
 }
 
 .container {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.6);
   padding: 1em;
+  border-radius: 1em;
+  border-style: solid;
+  border-width: 1px;
+  width: 90%;
+  margin: 1em auto;
+}
+
+/* Background data (Original source: https://subtlepatterns.com/grid-me/) */
+/* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+/* Main styles */
+body {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+  -webkit-animation: bg-scrolling-reverse 0.92s infinite; /* Safari 4+ */ /* Fx 5+ */ /* Opera 12+ */
+  animation: bg-scrolling-reverse 0.92s infinite; /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
 }/*# sourceMappingURL=main.css.map */
