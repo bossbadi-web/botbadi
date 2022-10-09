@@ -65,14 +65,26 @@ body {
   animation-timing-function: linear;
 }
 
+.table-wrapper {
+  width: 100%;
+}
+
+.img-wrapper {
+  width: 100%;
+}
+
 .example-img {
   width: 500px;
   height: auto;
   margin-top: 1em;
+  float: right;
 }
 
 @media screen and (max-width: 800px) {
-  .example-img {
+  .img-wrapper {
     display: none;
+  }
+  .table-wrapper {
+    min-width: none;
   }
 }
