@@ -10,6 +10,18 @@ html {
   scroll-behavior: smooth;
 }
 
+html:not([data-scroll="0"]) .navbar {
+  transition: 1s;
+  background-color: white;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+html[data-scroll="0"] .navbar {
+  transition: 1s;
+  background-color: transparent;
+  box-shadow: none;
+}
+
 body {
   font-family: "Exo", arial;
   word-wrap: break-word;
